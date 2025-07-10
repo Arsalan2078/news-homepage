@@ -1,0 +1,54 @@
+@use "./styles/mixins";
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-400);
+
+  padding-top: var(--spc-350);
+  padding-bottom: var(--spc-1100);
+  min-height: 100svh;
+
+  @include mixins.text-preset-6;
+}
+
+.header,
+.main {
+  padding: 0 clamp(1rem, -3rem + 16.6667vw, 5rem);
+}
+
+.main__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: var(--spc-800);
+  column-gap: var(--spc-400);
+}
+
+@media screen and (min-width: 1280px) {
+  .app {
+    gap: var(--spc-800);
+    padding-top: var(--spc-1100);
+  }
+
+  .main__grid {
+    grid-template-columns: repeat(12, 1fr);
+
+    section {
+      &:nth-child(1) {
+        grid-column: span 8;
+      }
+
+      &:nth-child(2) {
+        grid-column: span 4;
+      }
+
+      &:nth-child(3) {
+        grid-column: span 12;
+      }
+    }
+  }
+}
+
+* {
+  outline: 1px solid turquoise;
+}
