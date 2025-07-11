@@ -1,0 +1,23 @@
+@use "../styles/mixins";
+
+.button {
+  display: inline-block;
+  padding: var(--spc-200) var(--spc-400);
+
+  --_bg-color: var(--bg-color, var(--clr-red-500));
+  --_text-color: var(--text-color, var(--clr-navy-950));
+
+  background-color: var(--_bg-color);
+  color: var(--_text-color);
+
+  @include mixins.text-preset-7;
+  text-transform: uppercase;
+
+  transition: background-color var(--transition), color var(--transition);
+
+  &:hover,
+  &:focus {
+    --bg-color: var(--clr-navy-950);
+    --text-color: var(--clr-white);
+  }
+}

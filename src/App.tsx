@@ -1,4 +1,5 @@
 import "./App.scss";
+import Section1 from "./components/Section1";
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
 
         <main className="main">
           <div className="container main__grid">
-            <section>Section 1: The Bright Future of Web 3.0</section>
-            <section>Section 2: New Articles</section>
-            <section>Section 3: Top Articles</section>
+            <Section1 />
+            <div>Section</div>
+            <div>Section</div>
           </div>
         </main>
       </div>
