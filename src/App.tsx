@@ -1,4 +1,5 @@
 import "./App.scss";
+import Navigation from "./components/Navigation";
 import SectionIntro from "./components/SectionIntro";
 import SectionNewArticles from "./components/SectionNewArticles";
 import SectionTopArticles from "./components/SectionTopArticles";
@@ -8,7 +9,9 @@ function App() {
     <>
       <div className="app">
         <header className="header">
-          <div className="container">Header</div>
+          <div className="container">
+            <Navigation />
+          </div>
         </header>
 
         <main className="main">

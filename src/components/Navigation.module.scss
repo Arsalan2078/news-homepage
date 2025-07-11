@@ -1,0 +1,81 @@
+.container {
+  container: container-nav / inline-size;
+}
+
+.nav {
+  position: relative;
+}
+
+.logo {
+  height: 1.75rem;
+}
+
+.toggler {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+
+  display: block;
+
+  width: 2.5rem;
+  height: 1.875rem;
+
+  cursor: pointer;
+
+  > * {
+    margin: 0 auto;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  display: none;
+
+  height: 100svh;
+  padding: 1.75rem clamp(1.25rem, 0.25rem + 4.1667vw, 2.25rem);
+
+  background-color: var(--clr-white);
+  color: var(--clr-navy-950);
+  width: clamp(16rem, 12.5rem + 14.5833vw, 19.5rem);
+}
+
+.mobileReveal {
+  display: block;
+}
+
+// .navbar::before {
+//   position: fixed;
+//   top: 0;
+//   right: 0;
+//   z-index: 50;
+
+//   content: "";
+//   background-color: var(--clr-navy-950);
+//   opacity: 0.5;
+
+//   width: 100svw;
+//   height: 100svh;
+// }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-300);
+
+  margin-top: 7.375rem;
+
+  a {
+    transition: color var(--transition);
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--clr-red-500);
+  }
+}
