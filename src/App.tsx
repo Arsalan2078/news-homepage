@@ -1,5 +1,6 @@
 import "./App.scss";
 import SectionIntro from "./components/SectionIntro";
+import SectionNewArticles from "./components/SectionNewArticles";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <main className="main">
           <div className="container main__grid">
             <SectionIntro />
-            <div>Section</div>
+            <SectionNewArticles />
             <div>Section</div>
           </div>
         </main>

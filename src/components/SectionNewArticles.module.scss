@@ -1,0 +1,63 @@
+@use "../styles/mixins";
+
+.container {
+  container: container-section2 / inline-size;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-400);
+
+  padding: 2.375rem var(--spc-300);
+
+  background-color: var(--clr-navy-950);
+
+  --_text-color-normal: var(--clr-white);
+  --_text-color-highlight: var(--clr-gold-400);
+
+  color: var(--_text-color-normal);
+
+  h2 {
+    color: var(--_text-color-highlight);
+  }
+
+  p {
+    color: var(--clr-grey-300);
+  }
+
+  a {
+    transition: color var(--transition);
+  }
+
+  a:hover,
+  a:focus {
+    color: var(--_text-color-highlight);
+  }
+}
+
+.list {
+  --_spacer: var(--spc-400);
+
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spc-100);
+  }
+
+  li:not(:last-child) {
+    border-bottom: 0.0625rem solid var(--clr-navy-600);
+    padding-bottom: var(--_spacer);
+  }
+
+  li:not(:nth-child(1)) {
+    padding-top: var(--_spacer);
+  }
+}
+
+@container container-section2 (width >= 608px) {
+  .section {
+    padding-left: var(--spc-500);
+    padding-right: var(--spc-500);
+  }
+}

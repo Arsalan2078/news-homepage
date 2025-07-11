@@ -17,10 +17,6 @@
   align-items: start;
   gap: var(--spc-300);
 
-  h1 {
-    @include mixins.text-preset-2;
-  }
-
   .column {
     display: flex;
     flex-direction: column;
