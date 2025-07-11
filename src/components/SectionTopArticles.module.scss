@@ -1,0 +1,58 @@
+@use "../styles/mixins";
+
+.container {
+  container: container-section3 / inline-size;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spc-400);
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: var(--spc-300);
+
+  img {
+    width: 6.25rem;
+  }
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--spc-100);
+
+  --_text-color-highlight: var(--clr-red-500);
+
+  .number {
+    color: var(--_text-color-highlight);
+    @include mixins.text-preset-3;
+  }
+
+  h4 {
+    color: var(--clr-navy-950);
+    transition: color var(--transition);
+  }
+
+  a:hover,
+  a:focus {
+    h4 {
+      color: var(--_text-color-highlight);
+    }
+  }
+}
+
+@container container-section3 (width >= 1004px) {
+  .list {
+    flex-direction: row;
+    gap: var(--spc-500);
+
+    & > li {
+      flex: 1;
+    }
+  }
+}

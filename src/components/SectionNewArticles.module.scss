@@ -13,13 +13,17 @@
 
   background-color: var(--clr-navy-950);
 
-  --_text-color-normal: var(--clr-white);
   --_text-color-highlight: var(--clr-gold-400);
 
   color: var(--_text-color-normal);
 
   h2 {
     color: var(--_text-color-highlight);
+  }
+
+  h3 {
+    color: var(--clr-white);
+    transition: color var(--transition);
   }
 
   p {
@@ -32,7 +36,9 @@
 
   a:hover,
   a:focus {
-    color: var(--_text-color-highlight);
+    h3 {
+      color: var(--_text-color-highlight);
+    }
   }
 }
 
