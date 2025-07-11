@@ -1,9 +1,9 @@
-import classes from "./Section1.module.scss";
+import classes from "./SectionIntro.module.scss";
 import heroDesktop from "/image-web-3-desktop.jpg";
 import heroMobile from "/image-web-3-mobile.jpg";
 import ButtonLink from "./ButtonLink";
 
-export default function Section1() {
+export default function SectionIntro() {
   return (
     <div className={classes.container}>
       <section id="intro" className={classes.section}>

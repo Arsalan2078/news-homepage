@@ -1,5 +1,5 @@
 import "./App.scss";
-import Section1 from "./components/Section1";
+import SectionIntro from "./components/SectionIntro";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 
         <main className="main">
           <div className="container main__grid">
-            <Section1 />
+            <SectionIntro />
             <div>Section</div>
             <div>Section</div>
           </div>
