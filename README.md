@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Arsalan2078/news-homepage.git)
-- Live Site URL: [Add live site URL here](https://mellifluous-pudding-83e991.netlify.app/)
+- Solution URL: [https://github.com/Arsalan2078/news-homepage.git](https://github.com/Arsalan2078/news-homepage.git)
+- Live Site URL: [https://mellifluous-pudding-83e991.netlify.app/](https://mellifluous-pudding-83e991.netlify.app/)
 
 ## My process
 
